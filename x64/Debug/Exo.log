@@ -1,0 +1,12 @@
+﻿  main.cpp
+  World.cpp
+C:\Users\tmonat-merlen\source\repos\Exo\Exo\World.cpp(16,19): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+  Génération de code en cours...
+  Exo.vcxproj -> C:\Users\tmonat-merlen\source\repos\Exo\x64\Debug\Exo.exe
+  'pwsh.exe' n'est pas reconnu en tant que commande interne
+  ou externe, un programme exécutable ou un fichier de commandes.
+  Échec de la vérification d'AuthorizationManager.
+      + CategoryInfo          : Erreur de sécurité : (:) [], ParentContainsErrorRecordException
+  ´╗┐
+      + FullyQualifiedErrorId : UnauthorizedAccess
+C:\vcpkg\scripts\buildsystems\msbuild\vcpkg.targets(247,5): warning : [vcpkg] Failed to gather app local DLL dependencies, program may not run. Set VcpkgApplocalDeps to false in your project file to suppress this warning. PowerShell arguments: -ExecutionPolicy Bypass -noprofile -File "C:\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Users\tmonat-merlen\source\repos\Exo\x64\Debug\Exo.exe" "C:\vcpkg\installed\x64-windows\debug\bin" "x64\Debug\Exo.tlog\Exo.write.1u.tlog" "x64\Debug\vcpkg.applocal.log"
