@@ -8,6 +8,11 @@
 #define __WORLD__
 
 class World {
+
+private:
+	Mob* GetMob();
+	BreakableObject* GetBreakable();
+	Player* GetPlayer();
 public:
 	std::vector<Entity *> Entities;
 
@@ -15,6 +20,8 @@ public:
 
 	void Init();
 	int Step();
+
+
 };
 
 #endif // !__WORLD__

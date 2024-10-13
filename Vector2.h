@@ -1,6 +1,7 @@
 #pragma once
 
 #include <math.h>
+#include <string>
 
 #ifndef __VECTOR2__
 #define __VECTOR2__
@@ -20,6 +21,7 @@ public:
 
 	float Magnitude();
 	Vector2 Normalize();
+	std::string toString();
 
 	Vector2 operator+(const Vector2& _other);
 	Vector2 operator-(const Vector2& _other);

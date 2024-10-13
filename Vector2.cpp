@@ -22,10 +22,13 @@ void Vector2::SetY(float _y) {
 }
 
 float Vector2::Magnitude() {
-	return sqrt(GetX() * GetX() + GetY() * GetY());
+	return sqrt(x * x + y * y);
 }
 Vector2 Vector2::Normalize() {
-	return *this / Magnitude();
+	return (Magnitude() == 0 ? Vector2(0, 0) : *this / Magnitude());
+}
+std::string Vector2::toString() {
+	return "(" + std::to_string(x) + ", " + std::to_string(y) + ")";
 }
 
 Vector2 Vector2::operator+(const Vector2& _other) {
@@ -48,8 +51,8 @@ Vector2 Vector2::operator*(float _other) {
 }
 Vector2 Vector2::operator/(float _other) {
 	return Vector2(
-		this->x * _other,
-		this->y * _other
+		this->x / _other,
+		this->y / _other
 	);
 }
 Vector2 Vector2::operator+=(const Vector2 & _other) {
@@ -72,8 +75,8 @@ Vector2 Vector2::operator*=(float _other) {
 }
 Vector2 Vector2::operator/=(float _other) {
 	return Vector2(
-		this->x * _other,
-		this->y * _other
+		this->x / _other,
+		this->y / _other
 	);
 
 }	

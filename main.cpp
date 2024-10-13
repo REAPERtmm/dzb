@@ -5,5 +5,8 @@ int main() {
 	World w = World();
 
 	w.Init();
-	while (w.Step() > 1);
+
+	std::cout << "START SIMULATION" << std::endl;
+
+	while (w.Step());
 }
